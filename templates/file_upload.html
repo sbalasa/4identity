@@ -1,0 +1,19 @@
+<html>
+   <body style="background-color:#A3A6BB;">
+      <form class="bit4id-sign" method="post" action="http://testserverbit.com:8081/webapptest/smartengine/upload">
+          <b>Please Confirm: </b><br>
+          <div class="bit4id-signReq" style="display: none">
+              <div class="bit4id-document">{{ document_path }}</div>
+              <div class="bit4id-documentName">{{ filename }}</div>
+              <div class="bit4id-documentID">{{ filename }}</div>
+              <div class="bit4id-signatureType">PAdES</div>
+              <div class="bit4id-signingAlgorithm">RSASHA1</div>
+              <div class="bit4id-no_tslFilter">NO</div>
+              <div class="bit4id-revokedFilter">NO</div>
+        </div>
+        <div id="bit4id-status"></div>
+         <input type = "submit" value = "Confirm"/>
+      </form>
+   <script src="http://testserverbit.com:8081/webapptest/smartengine/bit4id-sign.min.js"></script>
+   </body>
+</html>
